@@ -37,17 +37,21 @@ https://github.com/mozzy11/openmrs-module-facelist/blob/master/omod/src/main/jav
 
 
 8.  Advantages of Hibernate 
-It removes a lot of repetitive code from the JDBC API, and therefore, the code is easier to read, write, and support.
-Hibernate Query Language (HQL) is fully object-oriented and more close to the Java programming language comparing to SQL in JDBC. Also, HQL is a Database-independent query that allows you to switch between different databases easily.
-Hibernate supports caching, which improves performance.
-- First-level is a mandatory Session cache.
-- Second-level is an optional cache. Hibernate has a lot of cache providers for this level, the most popular are: EHCache, OSCache, warmCache, JBoss Cache, etc.
-- Query-level is an optional cache for query result sets.
-Lazy load that also improves performance.
-Hibernate supports JPA annotations, which means the code is portable to other ORM frameworks.
+
+* It removes a lot of repetitive code from the JDBC API, and therefore, the code is easier to read, write, and support.
+
+* Hibernate Query Language (HQL) is fully object-oriented and more close to the Java programming language comparing to SQL in JDBC. Also, HQL is a Database-independent query that allows you to switch between different databases easily.
+
+*Hibernate supports caching, which improves performance.
+
+* Lazy load that also improves performance.
+
+* Hibernate supports JPA annotations, which means the code is portable to other ORM frameworks.
 Hibernate has a connection pool.
-You do not need to handle exceptions.Hibernate allows database management (for example creating tables), JDBC can only work with existing DB tables.
-Hibernate supports inheritance, associations, and collections that are not available in the JDBC API.
+
+* You do not need to handle exceptions.Hibernate allows database management (for example creating tables), JDBC can only work with existing DB tables.
+
+* Hibernate supports inheritance, associations, and collections that are not available in the JDBC API.
 
 Example 
 https://github.com/mozzy11/openmrs-module-facelist/blob/master/api/src/main/java/org/openmrs/module/facelist/Multipart.java
