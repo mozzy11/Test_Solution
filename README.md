@@ -1,4 +1,4 @@
-1. Integration testing is a type of testing to check if different pieces of the modules are working together in an intergarated enviroment and may also depend on external systems like database
+1. Integration testing is a type of testing to check if different pieces of the Code are working together in an intergarated enviroment and may also depend on external systems like database
    While Unit testing is the type of testing which checks a small piece of code independent of other code
 
    Exampe of Integrated testing 
