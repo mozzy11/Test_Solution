@@ -61,10 +61,22 @@ https://github.com/mozzy11/Test_Solution/tree/master/OpenMRS_Module/patientdata
 
 11   For Using webservices , did work below
 https://github.com/openmrs/openmrs-module-webservices.rest/pull/393/files
+
 https://github.com/openmrs/openmrs-module-webservices.rest/pull/392/files
+
 https://github.com/openmrs/openmrs-module-webservices.rest/pull/394/files 
 
 
-More Complete I have developed   
-https://github.com/openmrs/openmrs-module-growthchart
+ Complete Modules I have developed   
+https://github.com/openmrs/openmrs-module-growthchart  
+
 https://github.com/mozzy11/openmrs-module-facelist
+
+
+About Creating Atask , I didthe work below During the Hackathon 
+https://github.com/openmrs/openmrs-module-webservices.rest/pull/417/files
+
+
+For Reporting , i Did this work below.
+
+https://github.com/openmrs/openmrs-module-reporting/pull/184/files
