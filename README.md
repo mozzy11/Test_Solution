@@ -9,7 +9,7 @@
 
   see  https://github.com/mozzy11/Test_Solution/blob/master/Exceptions/src/ExceptionsMain.java
 
-  3. Replication. SQL Server replication is a technology for copying and distributing data and database objects from one database to another and then synchronizing between databases to maintain consistency and integrity of the data. 
+  3. Databse replication is a technology for copying and distributing data and database objects from one database to another and then synchronizing between databases to maintain consistency and integrity of the data. 
 
   The way it differs from Sync2 is the While Database replication is done at the databse level , Sync2 is done at the class objects level 
 
