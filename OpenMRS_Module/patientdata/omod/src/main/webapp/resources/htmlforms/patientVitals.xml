@@ -1,0 +1,26 @@
+<htmlform formName="PATIENT VITALS"
+          formDescription="Collect patient Vital"
+          formEncounterType="67a71486-1a54-468f-ac3e-7091a9a79584"
+          formUuid="8c2f8378-51c7-4407-85a0-cb2832accfcf"
+          formVersion="1.0"
+          formAddMetadata="yes"
+          formUILocation="patientDashboard.visitActions"
+          formOrder="11"
+          formIcon="icon-user"
+          formShowIf="(visit.active || !visit.active) &amp;&amp; patient.person.dead==false &amp;&amp; sessionLocation.uuid=='11d5d2b8-0fdd-42e0-9f53-257c760bb9a3'"
+          formDisplayStyle="Standard"
+          formLabel="Vitals">
+          
+         
+          <section headerLabel="section1">
+           <div>
+          <obs conceptId="5089" labelText="Weight" />
+          <obs conceptId="5090" labelText="Height" />
+          <obs conceptId="5087" labelText="Pulse Rate" />
+          <obs conceptId="5088" labelText="Temperature" />
+          <obs conceptId="117399" labelText="High Blood Pressure" />
+           </div>
+         </section>
+          
+          <submit/>
+</htmlform>          

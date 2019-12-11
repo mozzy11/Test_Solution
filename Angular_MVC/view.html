@@ -1,0 +1,18 @@
+
+<html>
+   <head>
+      <title>Angular MVC</title>
+      <script src = "angular.js"></script>
+      <script src = "controller.js"></script>
+   </head>
+   
+   <body>
+      <div ng-app = "App" ng-controller = "patientController">
+         Enter first name: <input type = "text" ng-model = "patient.firstName"><br>
+         <br>
+         Enter last name: <input type = "text" ng-model = "patient.lastName"><br>
+         <br>
+         Patient Full Name: {{patient.fullName()}}
+      </div>      
+   </body>
+</html>
