@@ -60,10 +60,16 @@ Hibernate has a connection pool.
 ###  Developed a module
 https://github.com/mozzy11/Test_Solution/tree/master/OpenMRS_Module/patientdata
 
-11   For Using webservices see the module, 
-see  https://github.com/mozzy11/Test_Solution/tree/master/OpenMRS_Module/patientdata/omod/src/main/java/org/openmrs/module/patientdata/rest/controller
+it can do the following , 
+* Capture data through a Form called *patientVitalsTest* 
+* Create A simpleListing Report called *Patient Vital Report*
+* Create an Indicator Report called *Indicator Report*
+* Return A list Of patients above 15 years both on a gsp and gsp. Acces the links on the Admin Page under the module Title
+* Created a Resource *item* , you can acces it from the Rest Swagger Documentation
 
-### More 
+11   For Using webservices see the module, 
+see Above module
+### For More rest work 
 https://github.com/openmrs/openmrs-module-webservices.rest/pull/393/files
 
 https://github.com/openmrs/openmrs-module-webservices.rest/pull/392/files

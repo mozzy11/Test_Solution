@@ -31,6 +31,8 @@ public class PeriodIndicatorReport {
 		females.setMaleIncluded(false);
 		//set Corhot indicator
 		CohortIndicator numberOfFeMales = new CohortIndicator("Females");
+		numberOfFeMales.setType(IndicatorType.COUNT);
+		;
 		numberOfFeMales.addParameter(ReportingConstants.START_DATE_PARAMETER);
 		numberOfFeMales.addParameter(ReportingConstants.END_DATE_PARAMETER);
 		numberOfFeMales.addParameter(ReportingConstants.LOCATION_PARAMETER);
