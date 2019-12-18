@@ -32,7 +32,6 @@ public class PeriodIndicatorReport {
 		//set Corhot indicator
 		CohortIndicator numberOfFeMales = new CohortIndicator("Females");
 		numberOfFeMales.setType(IndicatorType.COUNT);
-		;
 		numberOfFeMales.addParameter(ReportingConstants.START_DATE_PARAMETER);
 		numberOfFeMales.addParameter(ReportingConstants.END_DATE_PARAMETER);
 		numberOfFeMales.addParameter(ReportingConstants.LOCATION_PARAMETER);
@@ -41,7 +40,6 @@ public class PeriodIndicatorReport {
 		rd.setBaseCohortDefinition(females, null);
 		rd.addIndicator("report", "Number of Females", numberOfFeMales);
 		rd.addDataSetDefinition("Count Of Female", dfn, null);
-		
 		ReportDefinitionService rds = (ReportDefinitionService) Context.getService(ReportDefinitionService.class);
 		rds.saveDefinition(rd);
 	}

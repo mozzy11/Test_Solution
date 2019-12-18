@@ -48,8 +48,7 @@ public class ItemResource extends DataDelegatingCrudResource<Item> {
 	
 	@Override
 	public void purge(Item arg0, RequestContext arg1) throws ResponseException {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 	
 	@Override
