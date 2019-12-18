@@ -1,6 +1,7 @@
 package org.openmrs.module.patientdata.reports;
 
 import org.openmrs.api.context.Context;
+import org.openmrs.module.reporting.ReportingConstants;
 import org.openmrs.module.reporting.cohort.definition.GenderCohortDefinition;
 import org.openmrs.module.reporting.dataset.definition.SqlDataSetDefinition;
 import org.openmrs.module.reporting.indicator.CohortIndicator;
@@ -29,13 +30,14 @@ public class PeriodIndicatorReport {
 		females.setFemaleIncluded(true);
 		females.setMaleIncluded(false);
 		//set Corhot indicator
-		CohortIndicator numberOfFeMales = new CohortIndicator();
-		numberOfFeMales.setName("Females");
-		numberOfFeMales.setType(IndicatorType.COUNT);
+		CohortIndicator numberOfFeMales = new CohortIndicator("Females");
+		numberOfFeMales.addParameter(ReportingConstants.START_DATE_PARAMETER);
+		numberOfFeMales.addParameter(ReportingConstants.END_DATE_PARAMETER);
+		numberOfFeMales.addParameter(ReportingConstants.LOCATION_PARAMETER);
 		numberOfFeMales.setCohortDefinition(females, "");
 		
 		rd.setBaseCohortDefinition(females, null);
-		rd.addIndicator("1.A", "Number of Females", numberOfFeMales);
+		rd.addIndicator("report", "Number of Females", numberOfFeMales);
 		rd.addDataSetDefinition("Count Of Female", dfn, null);
 		
 		ReportDefinitionService rds = (ReportDefinitionService) Context.getService(ReportDefinitionService.class);

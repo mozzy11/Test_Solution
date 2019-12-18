@@ -18,10 +18,10 @@
   More Here  
   https://github.com/openmrs/openmrs-module-coreapps/commit/618262caad2cebff1ff8cc1773065f96740f468b
 
-  5. 
-###  Benefits of Usinn Spring.
+  5. ###  Benefits of Using Spring.
+
         *  Inversion Of Control (IOC)
-        *    Aspect Oriented Programming (AOP)
+        *  Aspect Oriented Programming (AOP)
         * Transaction Management
         *  Easy integration other frameworks
         *  Modularity
@@ -35,14 +35,15 @@
 7. Dependency injection is a pattern to allow your application to inject objects on the fly to classes that need them, without forcing those classes to be responsible for those objects. It allows your code to be more loosely coupled. 
  see  https://github.com/mozzy11/Test_Solution/tree/master/Dependence_Injection/src
 
+8. AOP  see   https://github.com/mozzy11/Test_Solution/tree/master/AOP/src
 
-8.  ### Advantages of Hibernate 
+9.  ### Advantages of Hibernate 
 
 * It removes a lot of repetitive code from the JDBC API, and therefore, the code is easier to read, write, and support.
 
 * Hibernate Query Language (HQL) is fully object-oriented and more close to the Java programming language comparing to SQL in JDBC. Also, HQL is a Database-independent query that allows you to switch between different databases easily.
 
-*Hibernate supports caching, which improves performance.
+* Hibernate supports caching, which improves performance.
 
 * Lazy load that also improves performance.
 
