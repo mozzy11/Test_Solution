@@ -9,8 +9,11 @@
  */
 package org.openmrs.module.patientdata.fragment.controller;
 
-import org.openmrs.api.UserService;
-import org.openmrs.ui.framework.annotation.SpringBean;
+import java.util.List;
+
+import org.openmrs.Patient;
+import org.openmrs.api.PatientService;
+import org.openmrs.api.context.Context;
 import org.openmrs.ui.framework.fragment.FragmentModel;
 
 /**
@@ -18,8 +21,17 @@ import org.openmrs.ui.framework.fragment.FragmentModel;
  */
 public class UsersFragmentController {
 	
-	public void controller(FragmentModel model, @SpringBean("userService") UserService service) {
-		model.addAttribute("users", service.getAllUsers());
+	List<Patient> maturePatients;
+	
+	public void controller(FragmentModel model) {
+		PatientService service = Context.getPatientService();
+		List<Patient> allpatients = service.getAllPatients();
+		for (Patient patient : allpatients) {
+			if (patient.getAge() >= 15) {
+				maturePatients.add(patient);
+			}
+		}
+		model.addAttribute("patients", maturePatients);
 	}
 	
 }

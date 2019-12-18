@@ -43,10 +43,6 @@ public class PatientdataServiceImpl extends BaseOpenmrsService implements Patien
 	
 	@Override
 	public Item saveItem(Item item) throws APIException {
-		if (item.getOwner() == null) {
-			item.setOwner(userService.getUser(1));
-		}
-		
 		return dao.saveItem(item);
 	}
 }

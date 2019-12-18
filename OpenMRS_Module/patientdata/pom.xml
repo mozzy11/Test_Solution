@@ -38,53 +38,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
-            <dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>formentryapp-omod</artifactId>
-				<version>${formentryappVersion}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>htmlformentryui-api</artifactId>
-				<version>${htmlformentryuiVersion}</version>
-				<scope>provided</scope>
-			</dependency>
-
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>htmlformentry-api</artifactId>
-				<version>${htmlformentryVersion}</version>
-				<scope>provided</scope>
-			</dependency>
-
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>htmlformentry-api-1.10</artifactId>
-				<version>${htmlformentryVersion}</version>
-				<scope>test</scope>
-			</dependency>
-
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>htmlformentry-api-2.0</artifactId>
-				<version>${htmlformentryVersion}</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>uiframework-api</artifactId>
-				<version>${uiframeworkVersion}</version>
-				<type>jar</type>
-				<scope>provided</scope>
-			</dependency>
-            <dependency>
-				<groupId>org.openmrs.module</groupId>
-				<artifactId>appframework-api</artifactId>
-				<version>${appframeworkVersion}</version>
-				<scope>provided</scope>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -114,13 +67,5 @@
 
 	<properties>
 		<openmrsPlatformVersion>1.11.6</openmrsPlatformVersion>
-		<formentryappVersion>1.4.2</formentryappVersion>
-		<formfilterVersion>1.0.0</formfilterVersion>
-		<htmlformentryuiVersion>1.7.0</htmlformentryuiVersion>
-		<htmlformentryVersion>3.8.0</htmlformentryVersion>
-		<uiframeworkVersion>3.15.0</uiframeworkVersion>
-		<appframeworkVersion>2.11.0</appframeworkVersion>
-		<reportingVersion>1.13.0</reportingVersion>
 	</properties>
-	
 </project>

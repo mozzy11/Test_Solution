@@ -13,52 +13,34 @@
 	<description>API project for Patientdata</description>
 	
 	<dependencies>
-	
-	<dependency>
-			<groupId>org.openmrs.module</groupId>
-			<artifactId>formentryapp-omod</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
-			<artifactId>htmlformentry-api</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.openmrs.module</groupId>
-			<artifactId>htmlformentry-api-1.10</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.openmrs.module</groupId>
-			<artifactId>htmlformentry-api-2.0</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.openmrs.module</groupId>
-			<artifactId>htmlformentryui-api</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.openmrs.module</groupId>
-			<artifactId>uiframework-api</artifactId>
+	        <artifactId>htmlformentryui-api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.openmrs.module</groupId>
-			<artifactId>appframework-api</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.openmrs.module</groupId>
-			<artifactId>reporting-api</artifactId>
-			<version>${reportingVersion}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.openmrs.module</groupId>
-			<artifactId>reporting-api-2.0</artifactId>
-			<version>${reportingVersion}</version>
-			<scope>test</scope>
-		</dependency>
+	            <groupId>org.openmrs.module</groupId>
+	            <artifactId>htmlformentry-api</artifactId>
+	     </dependency>
+	      <dependency>
+	            <groupId>org.openmrs.module</groupId>
+	            <artifactId>uiframework-api</artifactId>
+	       </dependency>
+	        <dependency>
+                <groupId>org.openmrs.module</groupId>
+                <artifactId>reporting-api</artifactId>
+            </dependency>
+ 
+            <dependency>
+                <groupId>org.openmrs.module</groupId>
+                <artifactId>serialization.xstream-api</artifactId>
+            </dependency>
+ 
+            <dependency>
+                <groupId>quartz</groupId>
+                <artifactId>quartz</artifactId>
+                <version>1.5.2</version>
+                <type>jar</type>
+                <scope>provided</scope>
+            </dependency>
 	</dependencies>
 </project>

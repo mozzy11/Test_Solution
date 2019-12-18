@@ -1,15 +1,9 @@
 <% ui.decorateWith("appui", "standardEmrPage") %>
 
-Hello, world.
 
-<% if (context.authenticated) { %>
-    And a special hello to you, $context.authenticatedUser.personName.fullName.
-    Your roles are:
-    <% context.authenticatedUser.roles.findAll { !it.retired }.each { %>
-        $it.role ($it.description)
-    <% } %>
+<% if (context.authenticated) { %> 
+${ ui.includeFragment("patientdata", "users") }
 <% } else { %>
     You are not logged in.
 <% } %>
 
-${ ui.includeFragment("patientdata", "users") }

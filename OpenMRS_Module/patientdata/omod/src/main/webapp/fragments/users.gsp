@@ -1,13 +1,16 @@
+<h3>PATIENTS ABOVE I5 YEARS</h3>
 <table>
   <tr>
-   <th>User Id</th>
-   <th>Username</th>
+   <th>PATIENT ID</th>
+   <th>PATIENT NAME</th>
+   <th>PATIENT IDENTIFIER</th>
   </tr>
-  <% if (users) { %>
-     <% users.each { %>
+  <% if (patients) { %>
+     <% patients.each { %>
       <tr>
-        <td>${ ui.format(it.userId) }</td>
-        <td>${ ui.format(it.systemId) }</td>
+        <td>${ ui.format(it.patientId) }</td>
+        <td>${ ui.format(it.personName) }</td>
+        <td>${ ui.format(it.patientIdentifier) }</td>
       </tr>
     <% } %>
   <% } else { %>

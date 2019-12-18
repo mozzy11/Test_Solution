@@ -5,15 +5,18 @@
 <h2><spring:message code="patientdata-omod.title" /></h2>
 
 <br/>
+<h3>PATIENTS ABOVE I5 YEARS</h3>
 <table>
   <tr>
-   <th>User Id</th>
-   <th>Username</th>
+   <th>PATIENT ID</th>
+   <th>PATIENT NAME</th>
+   <th>PATIENT IDENTIFIER</th>
   </tr>
-  <c:forEach var="user" items="${users}">
+  <c:forEach var="patient" items="${patients}">
       <tr>
-        <td>${user.userId}</td>
-        <td>${user.systemId}</td>
+        <td>${patient.patientId}</td>
+        <td>${patient.personName}</td>
+        <td>${patient.patientIdentifier}</td> 
       </tr>		
   </c:forEach>
 </table>

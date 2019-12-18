@@ -37,10 +37,14 @@
 		</dependency>
 		
 		<dependency>
-            <groupId>org.openmrs.module</groupId>
-            <artifactId>htmlformentry-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
+    		<groupId>org.openmrs.module</groupId>
+    		<artifactId>webservices.rest-omod</artifactId>
+		</dependency>
+ 
+		<dependency>
+    		<groupId>org.openmrs.module</groupId>
+    		<artifactId>webservices.rest-omod-common</artifactId>
+		</dependency>
 		
 	</dependencies>
 

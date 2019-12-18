@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+               
+ "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+  
+ "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+  <hibernate-configuration>
+   
+
+  <session-factory>
+  
+ 
+ <!-- Postgress Settings -->
+  
+ 
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_Mapped</property>
+      
+  <property name="hibernate.connection.username">root</property>
+      
+  <property name="hibernate.connection.password"></property>
+    
+  <property name="hibernate.connection.property_size">1</property>
+   
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  
+  <property name="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+   
+   
+    <!-- this displays the querry in the results window...if set to "false", it doesnt disply -->
+  <property name="hibernate.show_sql">true</property>
+  
+  
+   <!-- u put "update" instead of "create" if your saving for the second time -->
+  <property name="hibernate.hbm2ddl.auto">create</property> 
+  
+  <mapping class="org.mozz.userDetails"/>
+    <mapping class="org.mozz.Vehicle"/>
+
+  </session-factory> 
+
+</hibernate-configuration>
