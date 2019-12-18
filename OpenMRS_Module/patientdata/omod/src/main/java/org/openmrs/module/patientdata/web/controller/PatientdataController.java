@@ -9,6 +9,7 @@
  */
 package org.openmrs.module.patientdata.web.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
@@ -35,9 +36,7 @@ public class PatientdataController {
 	/** Logger for this class and subclasses */
 	protected final Log log = LogFactory.getLog(getClass());
 	
-	PatientService service = Context.getPatientService();
-	
-	List<Patient> maturePatients;
+	PatientService service;
 	
 	/** Success form view name */
 	private final String VIEW = "/module/patientdata/patientdata";
@@ -52,14 +51,6 @@ public class PatientdataController {
 		return VIEW;
 	}
 	
-	/**
-	 * All the parameters are optional based on the necessity
-	 * 
-	 * @param httpSession
-	 * @param anyRequestObject
-	 * @param errors
-	 * @return
-	 */
 	@RequestMapping(method = RequestMethod.POST)
 	public String onPost(HttpSession httpSession, @ModelAttribute("anyRequestObject") Object anyRequestObject,
 	        BindingResult errors) {
@@ -72,6 +63,8 @@ public class PatientdataController {
 	
 	@ModelAttribute("patients")
 	protected List<Patient> getPatients() throws Exception {
+		List<Patient> maturePatients = new ArrayList<Patient>();
+		service = Context.getPatientService();
 		List<Patient> allpatients = service.getAllPatients();
 		for (Patient patient : allpatients) {
 			if (patient.getAge() >= 15) {

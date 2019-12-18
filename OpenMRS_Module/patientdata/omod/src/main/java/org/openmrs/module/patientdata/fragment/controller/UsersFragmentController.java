@@ -9,6 +9,7 @@
  */
 package org.openmrs.module.patientdata.fragment.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openmrs.Patient;
@@ -21,10 +22,9 @@ import org.openmrs.ui.framework.fragment.FragmentModel;
  */
 public class UsersFragmentController {
 	
-	List<Patient> maturePatients;
-	
 	public void controller(FragmentModel model) {
 		PatientService service = Context.getPatientService();
+		List<Patient> maturePatients = new ArrayList<Patient>();
 		List<Patient> allpatients = service.getAllPatients();
 		for (Patient patient : allpatients) {
 			if (patient.getAge() >= 15) {

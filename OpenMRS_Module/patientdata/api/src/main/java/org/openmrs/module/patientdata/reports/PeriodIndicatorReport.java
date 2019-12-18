@@ -14,7 +14,7 @@ public class PeriodIndicatorReport {
 		
 		PeriodIndicatorReportDefinition rd = new PeriodIndicatorReportDefinition();
 		rd.setName("Indicator Report");
-		
+		rd.setupDataSetDefinition();
 		//set Dataset Definition
 		SqlDataSetDefinition dfn = new SqlDataSetDefinition();
 		String sql = "SELECT pn.given_name ,pt.identifier ,o.value_numeric FROM patient_identifier pt ,person_name pn ,"
@@ -29,7 +29,8 @@ public class PeriodIndicatorReport {
 		females.setFemaleIncluded(true);
 		females.setMaleIncluded(false);
 		//set Corhot indicator
-		CohortIndicator numberOfFeMales = new CohortIndicator("Females");
+		CohortIndicator numberOfFeMales = new CohortIndicator();
+		numberOfFeMales.setName("Females");
 		numberOfFeMales.setType(IndicatorType.COUNT);
 		numberOfFeMales.setCohortDefinition(females, "");
 		
