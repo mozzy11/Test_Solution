@@ -66,6 +66,7 @@ it can do the following ,
 * Create an Indicator Report called *Indicator Report*
 * Return A list Of patients above 15 years both on a gsp and gsp. Acces the links on the Admin Page under the module Title
 * Created a Resource *item* , you can acces it from the Rest Swagger Documentation
+### NOTE : The module only runs on a minimum version 2.8 of reference Application
 
 11   For Using webservices see the module, 
 see Above module
